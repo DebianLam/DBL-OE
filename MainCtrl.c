@@ -25,7 +25,7 @@ int main() {
 
         if (strcmp(input, "desktop\n") == 0) {
 
-            printf("time    --help    clear    apt-info\npythcalc    circcalc\n\n");
+            printf("time    --help    clear    apt-info\npythcalc    circcalc    sqrtcalc\n\n");
         }
 
         if (strcmp(input, "--help\n") == 0) {
@@ -70,6 +70,20 @@ int main() {
             }
 
             int executionResult = system("./Circle_Calculator");
+            if (executionResult != 0) {
+                printf("ERROR: Execution failed with error code %d\n", executionResult);
+                continue;
+            }clearConsole();
+        }
+        else if (strcmp(input, "sqrtcalc\n") == 0) {
+            int compileResult = system("gcc -o Sqrt_Calculator Sqrt_Calculator.c -lm");
+
+            if (compileResult != 0) {
+                printf("ERROR: Compilation failed with error code %d\n", compileResult);
+                continue;
+            }
+
+            int executionResult = system("./Sqrt_Calculator");
             if (executionResult != 0) {
                 printf("ERROR: Execution failed with error code %d\n", executionResult);
                 continue;

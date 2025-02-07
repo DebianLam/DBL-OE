@@ -17,7 +17,7 @@ int main() {
     int startup = 3;
     time_t currentTime = time(NULL);
     char* timeString = ctime(&currentTime);
-    printf("Bluewing Operating Environment in C\n");
+    printf("Debian Lam Operating Environment in C\n");
 
     while (startup == 3) {
         printf("User Input: ");

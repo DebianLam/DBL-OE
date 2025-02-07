@@ -30,12 +30,12 @@ int main() {
 
         if (strcmp(input, "--help\n") == 0) {
 
-            printf("Visit bluewingdev.com/BWOE for tech support\n");
+            printf("Visit https://github.com/DebianLam for tech support\n");
         }
 
         if (strcmp(input, "apt-info\n") == 0) {
 
-            printf("\nBluewing Operating Environment\nBased on the C Language\nIDE: VS Code\nCompiler: GCC\nProgramming: Debian Lam\n");
+            printf("\nDBL-OE\nBased on the C Language\nIDE: VS Code\nCompiler: GCC\nProgramming: Debian Lam\n");
         }
 
          if (strcmp(input, "clear\n") == 0) {
